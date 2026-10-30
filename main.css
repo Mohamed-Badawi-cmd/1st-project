@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -8,6 +9,7 @@ body{
     margin-top: 0px;
     min-width: 600px;
     max-width: 2000px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*this is the nav and the borders of the nav and logo*/
@@ -19,10 +21,11 @@ header{
     position: sticky;
     width: 100%;
     top: 0;
+    z-index: 1000;
 }
 header h2{
     color: #c084fc;
-    font-weight: 800px;
+    font-weight: 800;
     margin-left: 30px;
 }
 
@@ -45,7 +48,7 @@ nav ul {
 }
 
 nav ul li {
-    font-weight: 800px; 
+    font-weight: 800; 
 }
 
 /*this is the nav buttons edit*/
@@ -58,7 +61,7 @@ nav ul li {
 .home:hover{
     color: #e0d6f6;
 }
-.home :visited{
+.home:visited{
     color: #A855F7;
 }
 
@@ -70,7 +73,7 @@ nav ul li {
 .ovme:hover{
     color: #e0d6f6;
 }
-.ovme :visited{
+.ovme:visited{
     color: #A855F7;
 }
 
@@ -82,7 +85,7 @@ nav ul li {
 .Intrv:hover{
     color: #e0d6f6;
 }
-.Intrv :visited{
+.Intrv:visited{
     color: #A855F7;
 }
 
@@ -94,7 +97,7 @@ nav ul li {
 .prj:hover{
     color: #e0d6f6;
 }
-.prj :visited{
+.prj:visited{
     color: #A855F7;
 }
 
@@ -106,27 +109,36 @@ nav ul li {
 .contact:hover{
     color: #e0d6f6;
 }
-.contact :visited{
+.contact:visited{
     color: #A855F7;
 }
 
+/* Centering main wrapper */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 
 /*the head*/
 
 .maincontainer{
     height: 220px;
     width: 1000px;
+    max-width: 90vw;
     border-radius: 12px;
     border: 1px solid #c084fc;
-    margin-left: 280px;
-    margin-top: 70px;
+    margin: 70px auto 0 auto;
 }
 
 .maincontainer h1{
     color: white;
     text-align: center;
     font-size: 40px;
-    padding: 55px 250px;
+    padding: 55px 20px;
 }
 
 .maincontainer p {
@@ -139,10 +151,10 @@ nav ul li {
 
 .ovm{
     width: 1000px;
+    max-width: 90vw;
     height: 650px;
     background-color: #190C2C;
-    margin-top: 69px;
-    margin-left: 280px;
+    margin: 69px auto 0 auto;
     border-radius: 12px;
     border: 1px solid #A855F7;
 }
@@ -157,6 +169,7 @@ nav ul li {
 
 .ovmline{
     width: 896px;
+    max-width: calc(100% - 104px);
     height: 0;
     border: 1px solid #A855F7;
     margin: 20px 52px;
@@ -195,6 +208,7 @@ table{
     margin-top: 30px;
     margin-left: 52px;
     width: 896px;
+    max-width: calc(100% - 104px);
     height: 195px;
 }
 
@@ -227,12 +241,12 @@ td{
 
 .interview{
     width: 1000px;
+    max-width: 90vw;
     height: 724px;
     border: 1px solid #A855F7;
     background-color: #190C2C;
     border-radius: 12px;
-    margin-left: 280px;
-    margin-top: 91px;
+    margin: 91px auto 0 auto;
 }
 
 .interview h1 {
@@ -245,6 +259,7 @@ td{
 
 .intrvline {
     width: 896px;
+    max-width: calc(100% - 104px);
     height: 0;
     border: 1px solid #A855F7;
     margin: 20px 52px;
@@ -252,8 +267,9 @@ td{
 
 /*Interview questions and answers*/
 
-.qone{
+.qone, .qtwo, .qthree, .qfour, .qfive {
     width: 886px;
+    max-width: calc(100% - 114px);
     height: 80px;
     border: 1px solid #A855F7;
     border-radius: 5px;
@@ -262,7 +278,7 @@ td{
     margin-left: 57px;
 }
 
-.q1{
+.q1, .q2, .q3, .q4, .q5 {
     font-weight: 800;
     font-size: 16px;
     color: #c084fc;
@@ -270,111 +286,7 @@ td{
     margin-top: 10px;
 }
 
-.a1{
-    color: white;
-    margin-top: 15px;
-    margin-left: 10px;
-    font-size: 16px;
-    font-weight: 800;
-}
-
-.qtwo{
-    width: 886px;
-    height: 80px;
-    border: 1px solid #A855F7;
-    border-radius: 5px;
-    margin-top: 24.07px;
-    margin-bottom: 36px;
-    margin-left: 57px;
-}
-
-.q2{
-    font-weight: 800;
-    font-size: 16px;
-    color: #c084fc;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.a2{
-    color: white;
-    margin-top: 15px;
-    margin-left: 10px;
-    font-size: 16px;
-    font-weight: 800;
-}
-
-.qthree{
-    width: 886px;
-    height: 80px;
-    border: 1px solid #A855F7;
-    border-radius: 5px;
-    margin-top: 24.07px;
-    margin-bottom: 36px;
-    margin-left: 57px;
-}
-
-.q3{
-    font-weight: 800;
-    font-size: 16px;
-    color: #c084fc;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.a3{
-    color: white;
-    margin-top: 15px;
-    margin-left: 10px;
-    font-size: 16px;
-    font-weight: 800;
-}
-
-.qfour{
-    width: 886px;
-    height: 80px;
-    border: 1px solid #A855F7;
-    border-radius: 5px;
-    margin-top: 24.07px;
-    margin-bottom: 36px;
-    margin-left: 57px;
-}
-
-.q4{
-    font-weight: 800;
-    font-size: 16px;
-    color: #c084fc;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.a4{
-    color: white;
-    margin-top: 15px;
-    margin-left: 10px;
-    font-size: 16px;
-    font-weight: 800;
-}
-
-.qfive{
-    width: 886px;
-    height: 80px;
-    border: 1px solid #A855F7;
-    border-radius: 5px;
-    margin-top: 24.07px;
-    margin-bottom: 36px;
-    margin-left: 57px;
-}
-
-.q5{
-    font-weight: 800;
-    font-size: 16px;
-    color: #c084fc;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.a5{
+.a1, .a2, .a3, .a4, .a5 {
     color: white;
     margin-top: 15px;
     margin-left: 10px;
@@ -386,10 +298,9 @@ td{
 
 .proj{
     width: 1000px;
+    max-width: 90vw;
     height: 450px;
-    margin-top: 64px;
-    margin-left: 280px;
-    margin-bottom: 70px;
+    margin: 64px auto 70px auto;
     border: 1px solid #A855F7;
     border-radius: 12px;
     background-color: #190C2C;
@@ -405,6 +316,7 @@ td{
 
 .projline{
     width: 896px;
+    max-width: calc(100% - 104px);
     height: 0;
     border: 1px solid #A855F7;
     margin: 20px 52px;
@@ -418,9 +330,9 @@ td{
     margin-top: 48px;
 }
 
-/*this is 1st prj*/
+/*this is 2 prj's*/
 
-.pj1{
+.pj1, .pj2{
     height: 260px;
     width: 430px;
     background-color: #0F061C;
@@ -436,26 +348,10 @@ td{
     border: 1px solid #A855F7;
 }
 
-/*this is 2nd prj*/
-
-.pj2{
-    height: 260px;
-    width: 430px;
-    background-color: #0F061C;
-    border: 1px solid #A855F7;
-    border-radius: 10px;
-}
-
 /*footer*/
 
 footer{
     background-color: aqua;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    flex: 4;
+    text-align: center;
+    padding: 20px;
 }
