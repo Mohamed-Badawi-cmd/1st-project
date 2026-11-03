@@ -442,6 +442,9 @@ iframe{
     border-radius: 10px;
     margin-top: 16px;
     color: white;
+    padding-left: 15px;  /* Added: space from the left side */
+    padding-right: 15px; /* Added: space from the right side */
+    box-sizing: border-box; /* Added: prevents padding from breaking the 600px width */
 }
 
 .msgs{
@@ -453,6 +456,11 @@ iframe{
     border-radius: 10px;
     margin-top: 16px;
     color: white;
+    padding-top: 12px;   /* Added: makes text start from the top */
+    padding-left: 15px;  /* Added: space from the left side */
+    padding-right: 15px; /* Added: space from the right side */
+    box-sizing: border-box; /* Added: prevents padding from breaking the 600px width */
+    resize: none;        /* Added: prevents users from messing up your box size */
 }
 
 .Send{
@@ -462,12 +470,27 @@ iframe{
     margin-left: 5.5%;
     margin-top: 17px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 /*footer*/
 
 footer{
-    background-color: aqua;
+    background-color: #10051b;
     text-align: center;
+    border-top: 1px solid #A855F7;
     padding: 20px;
+}
+
+footer p{
+    color: white;
+}
+
+footer p a{
+    text-decoration: none;
+    color: white;
+}
+
+footer p a :visited{
+    color: white;
 }
