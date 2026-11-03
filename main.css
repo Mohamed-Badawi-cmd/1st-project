@@ -56,6 +56,8 @@ nav ul li {
     font-weight: 800; 
 }
 
+
+
 /*this is the nav buttons edit*/
 
 .home{
@@ -66,9 +68,6 @@ nav ul li {
 .home:hover{
     color: #e0d6f6;
 }
-.home:visited{
-    color: #A855F7;
-}
 
 .ovme{
     text-decoration: none;
@@ -77,9 +76,6 @@ nav ul li {
 }
 .ovme:hover{
     color: #e0d6f6;
-}
-.ovme:visited{
-    color: #A855F7;
 }
 
 .Intrv{
@@ -90,9 +86,6 @@ nav ul li {
 .Intrv:hover{
     color: #e0d6f6;
 }
-.Intrv:visited{
-    color: #A855F7;
-}
 
 .prj{
     text-decoration: none;
@@ -102,9 +95,6 @@ nav ul li {
 .prj:hover{
     color: #e0d6f6;
 }
-.prj:visited{
-    color: #A855F7;
-}
 
 .contact{
     text-decoration: none;
@@ -113,9 +103,6 @@ nav ul li {
 }
 .contact:hover{
     color: #e0d6f6;
-}
-.contact:visited{
-    color: #A855F7;
 }
 
 /* Centering main wrapper */
